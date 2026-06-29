@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=Jura:wght@400..700&display=swap');
+
+:root {
+  --color-bg: #EAE8E3;
+  --color-text: #1a1a1a;
+  --color-muted: #555555;
+  --color-border: #1a1a1a;
+  --color-accent: #586350;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 10%;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.title-large {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(6rem, 18vw, 18rem);
+  line-height: 0.85;
+  text-transform: uppercase;
+  color: var(--color-bg);
+}
+
+.title-medium {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
