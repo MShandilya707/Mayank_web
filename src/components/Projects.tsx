@@ -27,14 +27,14 @@ const projects = [
     span: "col-span-1"
   },
   {
-    title: "Workwave",
+    title: "UWB/IMU Spatial Tracking & Safety System",
     year: "2024",
-    desc: "Industrial auditory protection system leveraging UWB trilateration and IMUs for real-time warnings.",
-    longDesc: "Designed for high-noise industrial environments, Workwave uses Ultra-Wideband (UWB) trilateration and IMU data to track worker positions with sub-1m accuracy. It delivers real-time auditory warnings to prevent workplace accidents.",
+    desc: "Engineered an occupational safety system utilizing Ultra-Wideband (UWB) time-of-flight trilateration and IMU sensor fusion to achieve sub-meter worker positional accuracy.",
+    longDesc: "Developed an advanced occupational safety system engineered for high-noise industrial environments. The hardware architecture utilizes Ultra-Wideband (UWB) time-of-flight (ToF) trilateration combined with 6-axis IMU data. A custom sensor fusion algorithm continuously calculates worker positions and orientations with sub-meter spatial accuracy, overcoming the limitations of traditional GPS or Wi-Fi in complex indoor environments. By cross-referencing real-time telemetry against geofenced hazard zones, the embedded system instantly triggers localized auditory and haptic warnings with ultra-low latency to prevent workplace accidents.",
     images: [
       "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200&auto=format&fit=crop"
     ],
-    tags: ["UWB", "IMU"],
+    tags: ["UWB", "Sensor Fusion", "Embedded C++", "IMU"],
     span: "col-span-1"
   },
   {
