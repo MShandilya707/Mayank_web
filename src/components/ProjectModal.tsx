@@ -22,6 +22,59 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
       justifyContent: 'center',
       padding: '2rem'
     }}>
+      <style>
+        {`
+          .modal-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            height: 85vh;
+            background-color: var(--color-bg);
+            border-radius: 24px;
+            overflow: hidden;
+            border: 2px solid var(--color-border);
+            z-index: 1;
+          }
+          .modal-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+          }
+          .modal-image-area {
+            width: 100%;
+            height: 40%;
+            background-color: #ddd;
+            position: relative;
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+          }
+          .modal-text-area {
+            width: 100%;
+            height: 60%;
+            padding: 2rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+          }
+          @media (min-width: 768px) {
+            .modal-content-wrapper {
+              flex-direction: row;
+            }
+            .modal-image-area {
+              width: 55%;
+              height: 100%;
+            }
+            .modal-text-area {
+              width: 45%;
+              height: 100%;
+              padding: 3.5rem;
+            }
+          }
+        `}
+      </style>
+
       {/* Backdrop */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -47,19 +100,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, scale: 0.95 }}
         transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-        style={{
-          position: 'relative',
-          width: '100%',
-          maxWidth: '1000px',
-          height: '80vh',
-          backgroundColor: 'var(--color-bg)',
-          borderRadius: '24px',
-          overflow: 'hidden',
-          display: 'flex',
-          flexDirection: 'column',
-          border: '2px solid var(--color-border)',
-          zIndex: 1
-        }}
+        className="modal-container"
       >
         <button 
           onClick={onClose}
@@ -84,58 +125,56 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           ✕
         </button>
 
-        {/* Carousel / Image Area */}
-        <div style={{
-          width: '100%',
-          height: '50%',
-          backgroundColor: '#ddd',
-          position: 'relative',
-          display: 'flex',
-          overflowX: 'auto',
-          scrollSnapType: 'x mandatory'
-        }}>
-          {project.images.map((img: string, i: number) => (
-            <img 
-              key={i} 
-              src={img} 
-              alt={`${project.title} - view ${i + 1}`} 
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                flexShrink: 0,
-                scrollSnapAlign: 'start'
-              }} 
-            />
-          ))}
-          <div style={{ position: 'absolute', bottom: '1rem', right: '1.5rem', background: 'rgba(0,0,0,0.5)', color: '#fff', padding: '0.2rem 0.8rem', borderRadius: '20px', fontSize: '0.8rem' }}>
-            Scroll for more images
-          </div>
-        </div>
-
-        {/* Text Area */}
-        <div style={{ padding: '3rem', overflowY: 'auto' }}>
-          <h2 style={{ fontSize: '3rem', fontFamily: 'Anton, sans-serif', textTransform: 'uppercase', marginBottom: '1rem' }}>
-            {project.title}
-          </h2>
-          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
-            {project.tags.map((tag: string) => (
-              <span key={tag} style={{ 
-                fontSize: '0.8rem', 
-                padding: '0.4rem 1rem', 
-                border: '1px solid var(--color-text)',
-                color: 'var(--color-text)',
-                fontWeight: 600,
-                textTransform: 'uppercase',
-                letterSpacing: '0.05em'
-              }}>
-                {tag}
-              </span>
+        <div className="modal-content-wrapper">
+          {/* Carousel / Image Area */}
+          <div className="modal-image-area">
+            {project.images.map((img: string, i: number) => (
+              <img 
+                key={i} 
+                src={img} 
+                alt={`${project.title} - view ${i + 1}`} 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  flexShrink: 0,
+                  scrollSnapAlign: 'start'
+                }} 
+              />
             ))}
+            {project.images.length > 1 && (
+              <div style={{ position: 'absolute', bottom: '1.5rem', right: '1.5rem', background: 'rgba(0,0,0,0.6)', color: '#fff', padding: '0.4rem 1rem', borderRadius: '20px', fontSize: '0.85rem', backdropFilter: 'blur(4px)' }}>
+                Scroll for more images →
+              </div>
+            )}
           </div>
-          <p style={{ fontSize: '1.1rem', lineHeight: 1.8, color: 'var(--color-muted)' }}>
-            {project.longDesc || project.desc}
-          </p>
+
+          {/* Text Area */}
+          <div className="modal-text-area">
+            <h2 style={{ fontSize: '3rem', fontFamily: 'Anton, sans-serif', textTransform: 'uppercase', marginBottom: '1.5rem', lineHeight: 1.1 }}>
+              {project.title}
+            </h2>
+            
+            <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
+              {project.tags.map((tag: string) => (
+                <span key={tag} style={{ 
+                  fontSize: '0.8rem', 
+                  padding: '0.4rem 1rem', 
+                  border: '1px solid var(--color-text)',
+                  color: 'var(--color-text)',
+                  fontWeight: 600,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em'
+                }}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+            
+            <p style={{ fontSize: '1.15rem', lineHeight: 1.8, color: 'var(--color-muted)' }}>
+              {project.longDesc || project.desc}
+            </p>
+          </div>
         </div>
       </motion.div>
     </div>
