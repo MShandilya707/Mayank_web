@@ -28,8 +28,8 @@ const experiences = [
     company: "PricewaterhouseCoopers",
     date: "May 2025 - Jul 2025",
     description: [
-      "Supported enterprise-scale ETL pipeline development and data engineering utilizing PySpark and SQL within the Databricks environment.",
-      "Conducted comprehensive market research to evaluate emerging cloud technologies and modern data architectures.",
+      "Engineered enterprise-scale ETL pipelines in Databricks using PySpark and SQL to migrate legacy infrastructure into a decentralized Medallion Data Architecture (Bronze/Silver/Gold).",
+      "Conducted comprehensive quantitative market research analyzing key metrics and emerging tech trends within the insurance sector to support strategic client initiatives.",
       "Developed and delivered strategic data governance presentations to senior stakeholders, translating complex data models into actionable business insights."
     ]
   }
