@@ -16,14 +16,14 @@ const projects = [
     span: "col-span-2"
   },
   {
-    title: "Mimic",
+    title: "6-DOF Kinesthetic Telepresence System",
     year: "2025",
-    desc: "ESP32-based smart glove using flex sensors and an IMU to control a PC through hand gestures, enabling hands-free interaction.",
-    longDesc: "Mimic is a wearable computing interface. Using an ESP32 microcontroller, flex sensors, and a 6-axis IMU, the smart glove translates complex hand gestures into precise PC commands. This enables completely hands-free interaction, ideal for industrial environments or accessibility use cases.",
+    desc: "Engineered a high-performance C++ telepresence engine utilizing a 6-DOF Extended Kalman Filter to translate ESP32 smart-glove data into absolute 3D coordinates at 100Hz.",
+    longDesc: "A real-time robotic telepresence system designed to capture high-fidelity human kinesthetic data. The hardware edge-node features an ESP32-WROOM interfacing with an MPU9250 IMU, running Mahony sensor fusion, and broadcasting raw UDP telemetry at 100Hz. A native C++ Linux daemon repacks this stream into Protobuf messages over gRPC to a Bazel-managed Central Engine. The core engine utilizes the Eigen library to process kinematics through a custom 6-DOF Extended Kalman Filter (EKF), stripping gravity to calculate highly stable absolute 3D coordinates and velocities for robotic control or visualizers.",
     images: [
       "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
     ],
-    tags: ["Hardware", "C++", "ESP32"],
+    tags: ["C++", "Kalman Filter", "gRPC / Protobuf", "ESP32"],
     span: "col-span-1"
   },
   {
