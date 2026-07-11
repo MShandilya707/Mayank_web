@@ -81,6 +81,28 @@ const projects = [
     ],
     tags: ["ROS 2", "PyTorch", "C++ / PCL", "YOLOv8"],
     span: "col-span-1"
+  },
+  {
+    title: "RobotX Fleet OCS Dashboard",
+    year: "2025",
+    desc: "Engineered a C++ ROS 2 Operator Control Station (OCS) using Dear ImGui to bridge multi-vehicle fleet telemetry to a strict TCP Protobuf server over lossy 2.4GHz RF links.",
+    longDesc: "Developed the central 'RoboCommand' Operator Control Station (OCS) for the Archimedes Autonomous Vehicles (AAV) fleet. Engineered as a highly optimized C++ ROS 2 node, the dashboard provides a hardware-accelerated Dear ImGui interface (OpenGL3) to monitor real-time telemetry from USV, UUV, and UAV platforms. The system bridges high-frequency intra-fleet data into strictly formatted TCP Protobuf egress streams required by the RoboNation scoring server. Implemented specialized SensorDataQoS profiles to maintain resilience over lossy 2.4GHz RF links, and dynamic incident response features that automatically translate operator inputs into Nav2 keep-out zones.",
+    images: [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+    ],
+    tags: ["ROS 2", "C++ / ImGui", "Protobuf / TCP", "Fleet Network"],
+    span: "col-span-1"
+  },
+  {
+    title: "Autonomous UUV (NYCU Collaboration)",
+    year: "2026",
+    desc: "Leading an international robotics collaboration with NYCU to engineer a next-generation Unmanned Underwater Vehicle (UUV) for complex multi-domain operations.",
+    longDesc: "Spearheading a joint robotics initiative with National Yang Ming Chiao Tung University (NYCU) to engineer a next-generation Unmanned Underwater Vehicle (UUV). The project encompasses full-stack marine robotics development, including advanced hydrodynamics, underwater perception pipelines, and complex inter-vehicle acoustic communication systems. Designed to operate seamlessly alongside autonomous surface vessels, the UUV acts as a critical sub-surface node in a multi-domain autonomous fleet architecture.",
+    images: [
+      "https://images.unsplash.com/photo-1544256718-3bcf237f3974?q=80&w=1200&auto=format&fit=crop"
+    ],
+    tags: ["Marine Robotics", "UUV", "System Architecture", "Perception"],
+    span: "col-span-2"
   }
 ];
 
