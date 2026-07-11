@@ -49,26 +49,26 @@ const projects = [
     span: "col-span-1"
   },
   {
-    title: "Automated Dispensary",
+    title: "Automated Mechatronic Dispensary System",
     year: "2024",
-    desc: "Mechatronics dosage monitoring and delivery system programmed in C++ for dementia patients.",
-    longDesc: "A complete mechatronics solution for healthcare. This automated dispensary monitors dosage timings and securely delivers medication to dementia patients, minimizing human error in care facilities.",
+    desc: "Engineered a secure, C++ programmed mechatronic medication delivery system utilizing stepper motors, RTC scheduling, and active monitoring for healthcare applications.",
+    longDesc: "Designed and developed a complete mechatronics solution for automated healthcare applications. The system utilizes an Arduino-compatible microcontroller programmed in embedded C++ to manage real-time clock (RTC) scheduling and dispense medications with precise dosage monitoring. Actuation is handled via precisely calibrated stepper motors, while onboard sensors monitor delivery success and container states. The system was specifically designed to minimize human error in care facilities, providing a secure, autonomous fail-safe mechanism for patients requiring strict medication adherence.",
     images: [
       "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=1200&auto=format&fit=crop"
     ],
-    tags: ["Arduino", "Mechatronics"],
+    tags: ["Embedded C++", "Mechatronics", "Arduino", "Actuation"],
     span: "col-span-1"
   },
   {
-    title: "SkillSwap",
+    title: "SkillSwap: Full-Stack Educational Barter Platform",
     year: "2024",
-    desc: "React.js and Vite based platform using Supabase for a barter system of skills and courses in the education industry. Full-stack deployment with scalable architecture.",
-    longDesc: "SkillSwap is a full-stack platform built with React, Vite, and Supabase. It introduces a modern barter system for the education industry, allowing users to trade skills and courses seamlessly. The architecture is highly scalable, featuring real-time chat and secure authentication.",
+    desc: "Developed a scalable React and Vite application utilizing Supabase (PostgreSQL) for real-time chat, JWT authentication, and secure peer-to-peer educational exchanges.",
+    longDesc: "Architected and deployed SkillSwap, a highly scalable full-stack web application that introduces a peer-to-peer barter system for the education industry. The frontend is built using React and Vite, optimized for performance and responsive design. The backend leverages Supabase (PostgreSQL) to handle secure user authentication (JWT), robust relational data modeling for courses, and WebSockets for real-time messaging between users. The platform enables users to seamlessly trade skills and courses through a resilient, secure, and modern architecture.",
     images: [
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop"
     ],
-    tags: ["React", "Vite", "Supabase"],
+    tags: ["React / Vite", "Supabase", "PostgreSQL", "WebSockets"],
     span: "col-span-2"
   }
 ];
