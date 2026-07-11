@@ -27,14 +27,14 @@ const projects = [
     span: "col-span-1"
   },
   {
-    title: "UWB/IMU Spatial Tracking & Safety System",
+    title: "Workwave: IoT Spatial Tracking & Safety System",
     year: "2024",
-    desc: "Engineered an occupational safety system utilizing Ultra-Wideband (UWB) time-of-flight trilateration and IMU sensor fusion to achieve sub-meter worker positional accuracy.",
-    longDesc: "Developed an advanced occupational safety system engineered for high-noise industrial environments. The hardware architecture utilizes Ultra-Wideband (UWB) time-of-flight (ToF) trilateration combined with 6-axis IMU data. A custom sensor fusion algorithm continuously calculates worker positions and orientations with sub-meter spatial accuracy, overcoming the limitations of traditional GPS or Wi-Fi in complex indoor environments. By cross-referencing real-time telemetry against geofenced hazard zones, the embedded system instantly triggers localized auditory and haptic warnings with ultra-low latency to prevent workplace accidents.",
+    desc: "Engineered an ESP32-S3 occupational safety system utilizing UWB trilateration, MPU6500 IMU sensor fusion, and MQTT telemetry to achieve sub-meter positional accuracy.",
+    longDesc: "Developed an advanced IoT occupational safety system engineered for high-noise industrial environments. The hardware architecture is built around an ESP32-S3 microcontroller integrating an MPU6500 6-DOF IMU and UWB anchors. By combining UWB time-of-flight (ToF) positional data with IMU orientation data, the embedded system achieves highly accurate sub-meter spatial tracking. Real-time telemetry and hazard triggers are orchestrated via an MQTT broker, allowing the system to instantly activate localized buzzer and speaker actuators when workers breach geofenced danger zones. The portable system is powered by an integrated 18650 Battery with a custom BMS.",
     images: [
       "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200&auto=format&fit=crop"
     ],
-    tags: ["UWB", "Sensor Fusion", "Embedded C++", "IMU"],
+    tags: ["ESP32-S3", "MQTT", "UWB", "Sensor Fusion"],
     span: "col-span-1"
   },
   {
