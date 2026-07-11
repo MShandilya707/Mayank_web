@@ -9,8 +9,7 @@ const projects = [
     desc: "Engineered a 2.8kg bipedal humanoid integrated with a custom hexacopter. Achieved 58% liftoff thrust efficiency with full payload and simulated 16-DOF locomotion via NVIDIA Isaac Gym.",
     longDesc: "Developed a fully functional flying humanoid robot for public safety. Engineered a custom hexacopter flight platform utilizing 6x KV1000 BLDC motors and a Matek F405 controller, successfully lifting a 2.8kg payload at 58% maximum thrust. Designed and 3D-printed a 16-DOF bipedal structure powered by 30KG servos. Integrated OpenAI's Whisper and GPT-4o on a Milk-V Duo microcomputer for local speech recognition and natural language processing. Bipedal locomotion and dynamic Zero Moment Point (ZMP) stability were trained from scratch using Deep Reinforcement Learning (RL) policies within NVIDIA Isaac Gym.",
     images: [
-      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop"
+      "/projects/flying-humanoid.png"
     ],
     tags: ["Robotics", "NVIDIA Isaac Gym", "LLMs", "Hardware Integration"],
     span: "col-span-2"
