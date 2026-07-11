@@ -33,8 +33,9 @@ export const Contact = () => {
         style={{ display: 'flex', gap: '2rem', justifyContent: 'center', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}
       >
         <a href="mailto:mshandilya707@gmail.com" style={{ color: 'var(--color-text)', textDecoration: 'none', borderBottom: '2px solid var(--color-text)', paddingBottom: '4px' }}>Email</a>
-        <a href="#" style={{ color: 'var(--color-text)', textDecoration: 'none', borderBottom: '2px solid var(--color-text)', paddingBottom: '4px' }}>LinkedIn</a>
-        <a href="#" style={{ color: 'var(--color-text)', textDecoration: 'none', borderBottom: '2px solid var(--color-text)', paddingBottom: '4px' }}>GitHub</a>
+        <a href="tel:+6586796706" style={{ color: 'var(--color-text)', textDecoration: 'none', borderBottom: '2px solid var(--color-text)', paddingBottom: '4px' }}>Phone</a>
+        <a href="https://www.linkedin.com/in/mayank-shandilya-9352b51a8/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text)', textDecoration: 'none', borderBottom: '2px solid var(--color-text)', paddingBottom: '4px' }}>LinkedIn</a>
+        <a href="https://github.com/MShandilya707" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-text)', textDecoration: 'none', borderBottom: '2px solid var(--color-text)', paddingBottom: '4px' }}>GitHub</a>
       </motion.div>
     </section>
   );
