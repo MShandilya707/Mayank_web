@@ -38,14 +38,14 @@ const projects = [
     span: "col-span-1"
   },
   {
-    title: "Exoplanet Habitability",
+    title: "ML-Based Exoplanet Classification Pipeline",
     year: "2024",
-    desc: "Processed a 1000+ planetary dataset, achieving 0.8 explained variance classifying habitability.",
-    longDesc: "A machine learning pipeline built in Python to classify the habitability of exoplanets. The model processed over 1000 planetary datasets, applying PCA, K-Means clustering, and Decision Trees to achieve a high variance explanation score.",
+    desc: "Developed an end-to-end machine learning pipeline processing 1,000+ astronomical datasets, leveraging PCA and Decision Trees to predict habitability with 0.8 explained variance.",
+    longDesc: "Engineered a robust Machine Learning pipeline in Python to classify the habitability of exoplanets based on NASA/astronomical datasets. The project involved extensive data wrangling and preprocessing over 1,000 distinct planetary records. Applied Principal Component Analysis (PCA) for high-dimensional feature reduction, followed by K-Means clustering for exploratory data analysis. The final classification model utilized optimized Decision Trees, achieving a strong 0.8 explained variance score. This project demonstrates proficiency in predictive modeling, statistical analysis, and end-to-end Python data science workflows.",
     images: [
       "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1200&auto=format&fit=crop"
     ],
-    tags: ["Machine Learning", "Python"],
+    tags: ["Machine Learning", "Python", "PCA", "Scikit-Learn"],
     span: "col-span-1"
   },
   {
