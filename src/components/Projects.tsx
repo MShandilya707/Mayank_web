@@ -53,7 +53,7 @@ const projects = [
     desc: "Engineered a secure, C++ programmed mechatronic medication delivery system utilizing stepper motors, RTC scheduling, and active monitoring for healthcare applications.",
     longDesc: "Designed and developed a complete mechatronics solution for automated healthcare applications. The system utilizes an Arduino-compatible microcontroller programmed in embedded C++ to manage real-time clock (RTC) scheduling and dispense medications with precise dosage monitoring. Actuation is handled via precisely calibrated stepper motors, while onboard sensors monitor delivery success and container states. The system was specifically designed to minimize human error in care facilities, providing a secure, autonomous fail-safe mechanism for patients requiring strict medication adherence.",
     images: [
-      "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=1200&auto=format&fit=crop"
+      "/projects/dispensary.png"
     ],
     tags: ["Embedded C++", "Mechatronics", "Arduino", "Actuation"],
     span: "col-span-1"
