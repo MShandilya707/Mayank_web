@@ -87,7 +87,7 @@ const projects = [
     desc: "Engineered a C++ ROS 2 Operator Control Station (OCS) using Dear ImGui to bridge multi-vehicle fleet telemetry to a strict TCP Protobuf server over lossy 2.4GHz RF links.",
     longDesc: "Developed the central 'RoboCommand' Operator Control Station (OCS) for the Archimedes Autonomous Vehicles (AAV) fleet. Engineered as a highly optimized C++ ROS 2 node, the dashboard provides a hardware-accelerated Dear ImGui interface (OpenGL3) to monitor real-time telemetry from USV, UUV, and UAV platforms. The system bridges high-frequency intra-fleet data into strictly formatted TCP Protobuf egress streams required by the RoboNation scoring server. Implemented specialized SensorDataQoS profiles to maintain resilience over lossy 2.4GHz RF links, and dynamic incident response features that automatically translate operator inputs into Nav2 keep-out zones.",
     images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+      "/projects/aav-gui.png"
     ],
     tags: ["ROS 2", "C++ / ImGui", "Protobuf / TCP", "Fleet Network"],
     span: "col-span-1"
