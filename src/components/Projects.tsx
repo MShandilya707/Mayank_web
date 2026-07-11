@@ -70,6 +70,17 @@ const projects = [
     ],
     tags: ["React / Vite", "Supabase", "PostgreSQL", "WebSockets"],
     span: "col-span-2"
+  },
+  {
+    title: "ROS 2 AI Monocular 3D Perception",
+    year: "2025",
+    desc: "Engineered a hybrid Python/C++ ROS 2 pipeline leveraging PyTorch (MiDaS) and YOLOv8 to generate semantically segmented 3D point clouds from a single 2D camera.",
+    longDesc: "Developed an advanced ROS 2 perception system transforming monocular 2D images into rich 3D environments. A PyTorch-based AI node runs MiDaS depth estimation and YOLOv8 nano semantic segmentation in real-time. A high-performance C++ Lifecycle node then synchronizes this telemetry, projecting 2D pixels into 3D spatial coordinates using camera intrinsics. The architecture utilizes Point Cloud Library (PCL) algorithms like VoxelGrid downsampling and StatisticalOutlierRemoval to ensure clean, lightweight point clouds. The seamless mapping of 2D bounding boxes to 3D surfaces provides zero-cost 3D semantic segmentation, optimized to run entirely on a CPU.",
+    images: [
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop"
+    ],
+    tags: ["ROS 2", "PyTorch", "C++ / PCL", "YOLOv8"],
+    span: "col-span-1"
   }
 ];
 
